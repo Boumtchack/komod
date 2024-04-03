@@ -10,8 +10,7 @@
 <div class="container-phone align-items-center">
   <div class="profil-infos mt-2">
     <div class="profil-photo d-flex position-relative pb-1">
-      <%= cl_image_tag(clothe.owner.photo.key, class: "rounded-circle image-profile", width: '125px', height: '125px')%>
-      <%# <%= image_tag "profil/profil_kylan.jpeg", class: "rounded-circle image-profile", width: '125px', height: '125px' %>
+      <%= cl_image_tag(@user.photo.key, class: "rounded-circle image-profile", width: '125px', height: '125px')%>
       <%= link_to image_tag("buttons/edit_button.svg", alt: "Modifier mon profil", class: "edit-button edit-button-overlay"), edit_profils_path(@user) %>
     </div>
 
